@@ -1,0 +1,157 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Keeb&Code | Posts{% endblock %}
+
+{% block content %}
+
+<h2 class="blue-melon-gradient">Posts Category</h2>
+<br>
+
+<!--Grid row-->
+<div class="row">
+
+  <!--Grid column-->
+  <div class="col-md-6 mb-4">
+    {% if peripheral %}
+    <!-- Card -->
+    <div class="card gradient-card">
+
+        <div class="card-image">
+
+          <!-- Content -->
+          <a href="{% url 'posts:post-category' 'peripheral' %}">
+            <div class="blackcoral d-flex h-100 mask bg-powderblue">
+              <div class="first-content align-self-center p-3">
+                <h3 class="card-title">Peripheral</h3>
+                <p class="lead mb-0">Click on this card to see details</p>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+    </div>
+    <!-- Card -->
+      {% endif %}
+
+  </div>
+  <!--Grid column-->
+
+  <!--Grid column-->
+  <div class="col-md-6 mb-4">
+
+    {% if programming %}
+    <!-- Card -->
+    <div class="card gradient-card">
+
+        <div class="card-image">
+
+          <!-- Content -->
+          <a href="{% url 'posts:post-category' 'programming' %}">
+            <div class="blackcoral d-flex h-100 mask bg-melon">
+              <div class="first-content align-self-center p-3">
+                <h3 class="card-title">Programming</h3>
+                <p class="lead mb-0">Click on this card to see details</p>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+    </div>
+    <!-- Card -->
+      {% endif %}
+
+  </div>
+  <!--Grid column-->
+
+  <!--Grid column-->
+  <div class="col-md-6 mb-4">
+
+      {% if experiences %}
+    <!-- Card -->
+    <div class="card gradient-card">
+
+        <div class="card-image">
+
+          <!-- Content -->
+          <a href="{% url 'posts:post-category' 'experiences' %}">
+            <div class="blackcoral d-flex h-100 mask bg-aeroblue">
+              <div class="first-content align-self-center p-3">
+                <h3 class="card-title">Life Experiences</h3>
+                <p class="lead mb-0">Click on this card to see details</p>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+    </div>
+    <!-- Card -->
+      {% endif %}
+
+  </div>
+  <!--Grid column-->
+
+  <!--Grid column-->
+  <div class="col-md-6 mb-4">
+
+      {% if hardware %}
+    <!-- Card -->
+    <div class="card gradient-card">
+
+        <div class="card-image">
+
+          <!-- Content -->
+          <a href="{ 'posts:post-category' 'hardware' }">
+            <div class="blackcoral d-flex h-100 mask bg-blackcoral">
+              <div class="first-content align-self-center p-3">
+                <h3 class="card-title">Computer Hardware</h3>
+                <p class="lead mb-0">Click on this card to see details</p>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+    </div>
+    <!-- Card -->
+    {% endif %}
+
+  </div>
+  <!--Grid column-->
+
+   <!--Grid column-->
+  <div class="col-md-6 mb-4">
+
+      {% if software %}
+    <!-- Card -->
+    <div class="card gradient-card">
+
+        <div class="card-image">
+
+          <!-- Content -->
+          <a href="{ 'posts:post-category' 'software' }">
+            <div class="blackcoral d-flex h-100 mask bg-melon">
+              <div class="first-content align-self-center p-3">
+                <h3 class="card-title">Computer Software</h3>
+                <p class="lead mb-0">Click on this card to see details</p>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+    </div>
+    <!-- Card -->
+    {% endif %}
+
+  </div>
+  <!--Grid column-->
+
+
+</div>
+<!--Grid row-->
+
+{% endblock %}

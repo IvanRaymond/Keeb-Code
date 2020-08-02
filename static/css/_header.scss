@@ -1,0 +1,127 @@
+.bg-transparent {
+  background-color: transparent;
+}
+
+.navbar-trans {
+  background: transparent;
+}
+
+.navbar-brand {
+  margin-left: 4%;
+  display: flex;
+  align-items: center;
+}
+
+.brand-image {
+  width: 45px;
+
+  @media #{$mq-small} {
+    width: 65px;
+  }
+
+  @media #{$mq-xlarge} {
+    width: 100px;
+  }
+}
+
+.brand-text {
+    font-size: 45px;
+
+  @media #{$mq-small} {
+    font-size: 65px;
+  }
+
+  @media #{$mq-xlarge} {
+    font-size: 100px;
+  }
+}
+
+.typed-cursor {
+  font-size: 45px;
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+
+  @media #{$mq-small} {
+    font-size: 65px;
+  }
+
+  @media #{$mq-xlarge} {
+    font-size: 100px;
+  }
+}
+
+body.nav-open {
+  overflow:hidden
+}
+
+@media #{$mq-small} {
+    body.nav-open {
+      overflow: hidden;
+      margin-right:15px
+    }
+
+    body.nav-open .nav-toggler {
+      margin-right:15px
+    }
+}
+
+.nav-toggler {
+  z-index:99
+}
+
+.nav-menu {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100vh;
+  background-color: $blackcoral;
+  background-color: rgba($blackcoral, 0.9);
+  transition: all 0.2s;
+  z-index: 98;
+  display: flex;
+  overflow-y:auto
+}
+
+.nav-menu.show {
+  left:0
+}
+
+.nav-menu ul {
+  padding-top: 5rem;
+  padding-bottom:5rem
+}
+
+.nav-menu ul li a {
+  display: block;
+  font-weight: bold;
+  font-size: 50px;
+  color:$eggshell;
+
+  @media #{$mq-xlarge} {
+    font-size: 100px;
+  }
+}
+
+.nav-menu ul li a:hover {
+  color:$melon
+}
+
+.midnightHeader.default, .midnightHeader.white {
+  background:transparent
+}
+
+.midnightHeader.default .hamburger-inner, .midnightHeader.default .hamburger-inner::after, .midnightHeader.default .hamburger-inner::before {
+  background-color:#121212
+}
+
+.midnightHeader.white .hamburger-inner, .midnightHeader.white .hamburger-inner::after, .midnightHeader.white .hamburger-inner::before {
+  background-color:$melon
+}
+
+button.hamburger:focus {
+  outline:none
+}
+

@@ -1,0 +1,48 @@
+{% load static %}
+<div class="navbar-brand">
+    <img class="brand-image light-logo" src="{% static 'images/logo-nav.svg' %}" alt="Keyboard logo">
+    <img class="brand-image dark-logo display-hidden" src="{% static 'images/logo-nav-dark.svg' %}" alt="Keyboard logo">
+    <span class="brand-text"></span>
+</div>
+
+<div class="nav-toggler text-right" style="position: fixed; top: 0px; left: 0px; right: 0px; overflow: hidden; height: 92px;">
+    <div class="midnightHeader default" style="position: absolute; overflow: hidden; top: 0px; left: 0px; right: 0px; bottom: 0px; transform: translateY(110%) translateZ(0px);">
+        <div class="midnightInner" style="position: absolute; overflow: auto; top: 0px; left: 0px; right: 0px; bottom: 0px; transform: translateY(-110%) translateZ(0px);">
+          <div class="m-3">
+              <button class="hamburger hamburger--squeeze" type="button" data-toggle="modal" data-target="#exampleModal">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+          </div>
+        </div>
+    </div>
+    <div class="midnightHeader white" style="position: absolute; overflow: hidden; top: 0px; left: 0px; right: 0px; bottom: 0px; transform: translateY(0%) translateZ(0px);">
+        <div class="midnightInner" style="position: absolute; overflow: auto; top: 0px; left: 0px; right: 0px; bottom: 0px; transform: translateY(0%) translateZ(0px);">
+          <div class="m-3">
+              <button class="hamburger hamburger--squeeze" type="button" data-toggle="modal" data-target="#exampleModal">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+          </div>
+        </div>
+    </div>
+</div>
+
+<nav class="nav-menu" id="fixed">
+  <ul class="list-unstyled my-auto w-100 text-center">
+    <li class="list-unstyled-item">
+      <a href="{% url 'pages:feed' %}">Home</a>
+    </li>
+    <li class="list-unstyled-item">
+      <a href="{% url 'posts:posts' %}">Posts</a>
+    </li>
+    <li class="list-unstyled-item">
+      <a href="{% url 'pages:contact' %}">Contact</a>
+    </li>
+    <li class="list-unstyled-item">
+      <a href="{% url 'pages:about' %}">About</a>
+    </li>
+  </ul>
+</nav>

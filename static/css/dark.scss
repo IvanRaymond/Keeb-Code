@@ -1,0 +1,96 @@
+@import "main";
+
+/* Header */
+.brand-text {
+  color: $eggshell;
+}
+.typed-cursor {
+  color: $eggshell;
+}
+
+/* Main */
+body {
+  background: rgb(85,80,104);
+  background: linear-gradient(0deg, rgba(82,80,104,1) 0%, rgba(94,100,114,1) 100%);
+}
+
+.light-gradient{
+  background: -webkit-linear-gradient(45deg, $melon 0%, $blackcoral 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.blue-gradient{
+  background: -webkit-linear-gradient(45deg, $powderblue 0%, $blackcoral 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.aero-gradient{
+  background: -webkit-linear-gradient(45deg, $aeroblue 0%, $blackcoral 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.blue-melon-gradient{
+  background: -webkit-linear-gradient(45deg, $powderblue 0%, $melon 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.p-dark {
+  color: $eggshell;
+}
+
+// Placeholder Colour
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $eggshell !important;
+  opacity: 1; /* Firefox */
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $eggshell;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $eggshell;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $eggshell;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $eggshell;
+}
+
+.input-container {
+  border-color: $eggshell !important;
+}
+
+// Feed Posts Cards
+.my-card-texts {
+  color: $eggshell;
+  background-color: rgba($blackcoral,0.75);
+}
+.overlay{
+  background-color: $melon;
+}
+.overlay-text {
+  color: $blackcoral;
+}
+
+.btn-gradient {
+  background: linear-gradient(90deg, rgba(174,217,224,1) 0%, rgba(94,100,114,1) 100%);
+  border: none;
+}
+
+/* Footer */
+.footer {
+  background-color: #525068;
+}
+
+.social-circle i {
+  color: $blackcoral;
+}
+
+.social-circle a {
+    background-color: $eggshell;
+}
+
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i, .social-network a.icoMedium:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+    color: $black;
+}

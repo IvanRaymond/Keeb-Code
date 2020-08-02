@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Keeb&Code | Blog{% endblock %}
+
+{% block content %}
+<div class="render-container">
+  <video class="feed-render" muted autoplay loop src="{% static 'video/pc.mp4' %}" poster="{% static 'images/pc.svg' %}"></video>
+  <video class="feed-render display-hidden" muted autoplay loop src="{% static 'video/pc-dark.mp4' %}" poster="{% static 'images/pc.svg' %}"></video>
+</div>
+
+<h2 class="blue-gradient">Recent Posts</h2>
+<br>
+
+<div class="pancake-grid">
+  {% for post in post_list reversed %}
+    {% if forloop.counter <= 10 %}
+      {% if post.visible %}
+      <div data-aos="fade-up">
+        <a class="text-decoration-none" href="{% url 'posts:post-detail' post.id %}">
+          <div class="my-card image rounded" style="background-image: url({{ post.thumbnail.url }});">
+            <div class="my-card-texts">
+              <h5 class="card-title">{{ post.title | title }}</h5>
+              <p class="card-subtitle">{{ post.subtitle | title }}</p>
+              <p class="card-text"><i>{{ post.date }}</i></p>
+            </div>
+            <div class="rounded overlay-text overlay">
+              <p class="card-text padding-5">
+                <b>{{ post.title | title }}</b><br>
+
+                {{ post.subtitle | title }}<br>
+
+                <i>{{ post.date }}</i>
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</div>
+
+<div data-aos="fade-up">
+  <div class="more">
+    <a href="{% url 'posts:posts' %}">
+      <button class="btn bg-powderblue">Click for more</button>
+    </a>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,6 @@
+# Ignore Environment Variables files
+.env
+
+# Ignore Virtual Environment file
+/blogenv
+

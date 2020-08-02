@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+        <meta charset="utf-8">
+        {% block head %}{% endblock %}
+        <title>{% block title %}{% endblock %}</title>
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel='stylesheet' href="{% static 'css/light.css' %}">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" integrity="sha256-7O1DfUu4pybYI7uAATw34eDrgQaWGOfMV/8erfDQz/Q=" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/0.9.1/hamburgers.min.css" integrity="sha256-hCM6SsLZUT2/Vkykg2meK/x+qOo9SJPfYif9agoSGOk=" crossorigin="anonymous">
+        {% block head_script %}{% endblock %}
+        {% block extrastyle %}
+        <style>
+            @font-face {
+              font-family: Ambit;
+              src:
+                url("{% static 'font/Ambit/Ambit-Black.ttf' %}") format('truetype') font-weight-bolder,
+                url("{% static 'font/Ambit/Ambit-BlackItalic.ttf' %}") format('truetype') font-italic font-weight-bolder,
+                url("{% static 'font/Ambit/Ambit-Bold.ttf' %}") format('truetype') font-weight-bold,
+                url("{% static 'font/Ambit/Ambit-BoldItalic.ttf' %}") format('truetype') font-italic font-weight-bold,
+                url("{% static 'font/Ambit/Ambit-ExtraLight.ttf' %}") format('truetype') font-weight-extra-light,
+                url("{% static 'font/Ambit/Ambit-ExtraLightItalic.ttf' %}") format('truetype') font-italic font-weight-extra-light,
+                url("{% static 'font/Ambit/Ambit-Italic.ttf' %}") format('truetype') font-italic,
+                url("{% static 'font/Ambit/Ambit-Light.ttf' %}") format('truetype') font-weight-light,
+                url("{% static 'font/Ambit/Ambit-LightItalic.ttf' %}") format('truetype') font-italic font-weight-light,
+                url("{% static 'font/Ambit/Ambit-Regular.ttf' %}") format('truetype') font-weight-regular,
+                url("{% static 'font/Ambit/Ambit-SemiBold.ttf' %}") format('truetype') font-weight-semi-bold,
+                url("{% static 'font/Ambit/Ambit-SemiBoldItalic.ttf' %}") format('truetype') font-italic font-weight-semi-bold,
+                url("{% static 'font/Ambit/Ambit-Thin.ttf' %}") format('truetype') font-weight-thin,
+                url("{% static 'font/Ambit/Ambit-ThinItalic.ttf' %}") format('truetype') font-italic font-weight-thin
+              ;
+            }
+        </style>
+        {% endblock %}
+        {% block responsive %}
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        {% endblock %}
+    </head>
+    <body>
+        <!--Loading Navbar-->
+        {% include 'header.html' %}
+        <!-- Container -->
+        <main>
+            <div id="container">
+                <!-- Header -->
+                {% block header %}{% endblock %}
+                <!-- END Header -->
+                <!-- Content -->
+                <div id="content" class="{% block content_container_class %}{% endblock %}">
+                    {% block pretitle %}{% endblock %}
+                    {% block content %}{% endblock %}
+                </div>
+                <!-- END Content -->
+            </div>
+        </main>
+        <!-- END Container -->
+        <footer class="footer">
+        {% include 'footer.html' %}
+        </footer>
+        <!-- Load Javascript-->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+        <script>
+          /* Open when someone clicks on the span element */
+          function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+          }
+          /* Close when someone clicks on the "x" symbol inside the overlay */
+          function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+          }
+        </script>
+        <script src="{% static 'js/typed.js' %}"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+        <script src="{% static 'js/zooming.js' %}"></script>
+        <script src="{% static 'js/header.js' %}"></script>
+        {% block script %}{% endblock %}
+        <!-- End Javascript-->
+    </body>
+</html>

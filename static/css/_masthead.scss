@@ -1,0 +1,101 @@
+// Styling for the masthead
+.banner-container {
+  position: relative;
+}
+
+div.banner-container img {
+  width: 100%;
+  height: 50vw;
+  object-fit: cover;
+
+  @media #{$mq-small} {
+    height: 40vw;
+  }
+
+  @media #{$mq-medium} {
+    height: 35vw;
+  }
+
+  @media #{$mq-large} {
+    height: 30vw;
+  }
+
+  @media #{$mq-xlarge} {
+    height: 25vw;
+  }
+}
+
+div.banner-title .banner-text {
+  font-size: 14px;
+
+  @media #{$mq-small} {
+    font-size: 17px;
+  }
+
+  @media #{$mq-medium} {
+    font-size: 20px;
+  }
+
+  @media #{$mq-large} {
+    font-size: 25px;
+  }
+
+  @media #{$mq-xlarge} {
+    font-size: 35px;
+  }
+}
+
+.font-ambit {
+  font-family: Ambit, Tahoma, Helvetica, SansSerif;
+}
+
+#title {
+  font-size: 27px;
+
+  @media #{$mq-small} {
+    font-size: 35px;
+  }
+
+  @media #{$mq-medium} {
+    font-size: 40px;
+  }
+
+  @media #{$mq-large} {
+    font-size: 50px;
+  }
+
+  @media #{$mq-xlarge} {
+    font-size: 70px;
+  }
+}
+
+h4.author-text{
+  font-size: 13px;
+  margin-bottom: 3px;
+
+  @media #{$mq-small} {
+    font-size: 15px;
+  }
+
+  @media #{$mq-medium} {
+    font-size: 17px;
+  }
+
+  @media #{$mq-large} {
+    font-size: 19px;
+  }
+
+  @media #{$mq-xlarge} {
+    font-size: 21px;
+  }
+}
+
+div.profile-pic {
+  display: inline-block;
+  vertical-align: top;
+}
+
+div.profile-text{
+  display: inline-block;
+  vertical-align: top;
+}

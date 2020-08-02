@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block title %}Keeb&Code | Contact me{% endblock %}
+
+{% block content %}
+
+
+<h2 class="light-gradient">Contact</h2>
+
+{% if success %}
+<div class="alert alert-success" role="alert">
+  Message sent 📬
+</div>
+{% endif %}
+
+{% if form.name.errors %}
+<div class="alert alert-danger" role="alert">
+    {% for error in form.name.errors %}
+        {{ error }}
+    {% endfor %}
+</div>
+{% endif %}
+{% if form.email.errors %}
+<div class="alert alert-danger" role="alert">
+    {% for error in form.email.errors %}
+        {{ error }}
+    {% endfor %}
+</div>
+{% endif %}
+{% if form.message.errors %}
+<div class="alert alert-danger" role="alert">
+    {% for error in form.message.errors %}
+        {{ error }}
+    {% endfor %}
+</div>
+{% endif %}
+
+<br>
+<p class="p-dark">
+    This ritual has been passed from ages on and it's called a contact form.
+    <br><br>
+    Feel free to use it to contact me at your will.
+</p>
+
+<form method='POST'> {% csrf_token %}
+    {{ form.non_field_errors }}
+    <div class="form-group border-bottom input-container">
+        {{ form.name }}
+    </div>
+    <div class="form-group border-bottom input-container">
+        {{ form.email }}
+    </div>
+    <div class="form-group border-bottom input-container">
+        {{ form.message }}
+    </div>
+    <input class="btn send-btn" type="submit">
+</form>
+{% endblock %}

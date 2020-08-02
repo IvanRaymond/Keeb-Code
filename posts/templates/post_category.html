@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}Keeb&Code | {{ category }}{% endblock %}
+
+{% block content %}
+
+<h2 class="aero-gradient">{{ category|title }} Posts</h2>
+<br><br>
+
+<div class="pancake-grid">
+  {% for post in post_list reversed %}
+    {% if forloop.counter <= 10 %}
+      {% if post.visible %}
+      <div data-aos="fade-up">
+        <a class="text-decoration-none" href="{% url 'posts:post-detail' post.id %}">
+          <div class="my-card image" style="background-image: url({{ post.thumbnail.url }});">
+            <div class="my-card-texts">
+              <h5 class="card-title">{{ post.title }}</h5>
+              <p class="card-subtitle">{{ post.subtitle }}</p>
+              <p class="card-text"><i>{{ post.date }}</i></p>
+            </div>
+            <div class="overlay-text overlay">
+              <p class="card-text padding-5">
+                <b>{{ post.title }}</b>
+                <br>
+                {{ post.subtitle }}
+                <br>
+                <i>{{ post.date }}</i>
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</div>
+
+{% endblock %}
