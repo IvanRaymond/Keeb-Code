@@ -7,14 +7,17 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   inkscape:version="1.0 (4035a4f, 2020-05-01)"
-   height="1444.7286"
-   width="2220.0186"
-   sodipodi:docname="logo-share.svg"
-   version="1.1"
-   viewBox="0 0 222.02405 144.48731"
+   inkscape:export-ydpi="799.97174"
+   inkscape:export-xdpi="799.97174"
+   inkscape:export-filename="/Users/ivan/Sites/Keeb-Code/static/images/logo-share.png"
+   id="Layer_1"
    data-name="Layer 1"
-   id="Layer_1">
+   viewBox="0 0 222.02405 144.48731"
+   version="1.1"
+   sodipodi:docname="logo-share.svg"
+   width="2220.0186"
+   height="1444.7286"
+   inkscape:version="1.0 (4035a4f, 2020-05-01)">
   <metadata
      id="metadata860">
     <rdf:RDF>
@@ -23,108 +26,108 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <sodipodi:namedview
-     inkscape:pagecheckerboard="false"
-     inkscape:current-layer="Layer_1"
-     inkscape:window-maximized="0"
-     inkscape:window-y="23"
-     inkscape:window-x="0"
-     inkscape:cy="1235.3878"
-     inkscape:cx="308.14648"
-     inkscape:zoom="0.31564109"
-     lock-margins="true"
-     scale-x="0.10001"
-     fit-margin-bottom="500"
-     fit-margin-right="500"
-     fit-margin-left="500"
-     fit-margin-top="500"
-     showgrid="false"
-     id="namedview858"
-     inkscape:window-height="1162"
-     inkscape:window-width="2322"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0"
-     guidetolerance="10"
-     gridtolerance="10"
-     objecttolerance="10"
-     borderopacity="1"
-     bordercolor="#666666"
+     inkscape:document-rotation="0"
      pagecolor="#ffffff"
-     inkscape:document-rotation="0" />
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2322"
+     inkscape:window-height="1162"
+     id="namedview858"
+     showgrid="false"
+     fit-margin-top="500"
+     fit-margin-left="500"
+     fit-margin-right="500"
+     fit-margin-bottom="500"
+     scale-x="0.10001"
+     lock-margins="true"
+     inkscape:zoom="0.31564109"
+     inkscape:cx="308.14648"
+     inkscape:cy="1235.3878"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Layer_1"
+     inkscape:pagecheckerboard="false" />
   <defs
      id="defs835">
     <style
        id="style833">.cls-1{fill:none;stroke:#231f20;stroke-miterlimit:10;}.cls-2{font-size:22.47px;fill:#231f20;font-family:AvenirNext-Regular, Avenir Next;}.cls-3{letter-spacing:-0.03em;}.cls-4{letter-spacing:-0.01em;}</style>
   </defs>
   <rect
-     y="-0.94806534"
-     x="-9.0061924e-08"
-     height="147.64835"
-     width="223.37727"
+     style="fill:#ffa69e;fill-opacity:1;fill-rule:evenodd;stroke-width:0.10001"
      id="rect848"
-     style="fill:#ffa69e;fill-opacity:1;fill-rule:evenodd;stroke-width:0.10001" />
+     width="223.37727"
+     height="147.64835"
+     x="-9.0061924e-08"
+     y="-0.94806534" />
   <rect
-     style="stroke:#5e6472;stroke-opacity:1"
-     id="rect837"
-     height="42.869999"
-     width="51.59"
-     y="51.112316"
+     class="cls-1"
      x="50.505001"
-     class="cls-1" />
+     y="51.112316"
+     width="51.59"
+     height="42.869999"
+     id="rect837"
+     style="stroke:#5e6472;stroke-opacity:1" />
   <rect
-     style="stroke:#5e6472;stroke-opacity:1"
-     id="rect839"
-     height="5.0700002"
-     width="5.0700002"
-     y="53.672318"
+     class="cls-1"
      x="53.715"
-     class="cls-1" />
-  <rect
-     style="stroke:#5e6472;stroke-opacity:1"
-     id="rect841"
-     height="5.0700002"
-     width="22.629999"
      y="53.672318"
+     width="5.0700002"
+     height="5.0700002"
+     id="rect839"
+     style="stroke:#5e6472;stroke-opacity:1" />
+  <rect
+     class="cls-1"
      x="64.654999"
-     class="cls-1" />
-  <rect
-     style="stroke:#5e6472;stroke-opacity:1"
-     id="rect843"
-     height="5.0700002"
-     width="11.32"
      y="53.672318"
+     width="22.629999"
+     height="5.0700002"
+     id="rect841"
+     style="stroke:#5e6472;stroke-opacity:1" />
+  <rect
+     class="cls-1"
      x="90.784996"
-     class="cls-1" />
+     y="53.672318"
+     width="11.32"
+     height="5.0700002"
+     id="rect843"
+     style="stroke:#5e6472;stroke-opacity:1" />
   <polygon
-     transform="translate(50.005,47.802317)"
-     style="stroke:#5e6472;stroke-opacity:1"
-     id="polygon845"
+     class="cls-1"
      points="3.71,13.27 52.09,13.27 52.09,43.11 16.54,43.11 16.54,38.68 12.11,38.68 12.11,43.11 3.71,43.11 "
-     class="cls-1" />
+     id="polygon845"
+     style="stroke:#5e6472;stroke-opacity:1"
+     transform="translate(50.005,47.802317)" />
   <text
-     y="66.992317"
-     x="103.095"
-     style="fill:#5e6472;fill-opacity:1"
+     class="cls-2"
      id="text855"
-     class="cls-2"><tspan
-       style="fill:#5e6472;fill-opacity:1"
+     style="fill:#5e6472;fill-opacity:1"
+     x="103.095"
+     y="66.992317"><tspan
+       class="cls-3"
        id="tspan847"
-       class="cls-3">K</tspan><tspan
-       style="fill:#5e6472;fill-opacity:1"
-       id="tspan849"
+       style="fill:#5e6472;fill-opacity:1">K</tspan><tspan
+       x="116.535"
        y="66.992317"
-       x="116.535">eeb&amp;</tspan><tspan
-       style="fill:#5e6472;fill-opacity:1"
-       id="tspan851"
-       y="93.952316"
+       id="tspan849"
+       style="fill:#5e6472;fill-opacity:1">eeb&amp;</tspan><tspan
+       class="cls-4"
        x="103.095"
-       class="cls-4">C</tspan><tspan
-       style="fill:#5e6472;fill-opacity:1"
-       id="tspan853"
        y="93.952316"
-       x="119.005">ode</tspan></text>
+       id="tspan851"
+       style="fill:#5e6472;fill-opacity:1">C</tspan><tspan
+       x="119.005"
+       y="93.952316"
+       id="tspan853"
+       style="fill:#5e6472;fill-opacity:1">ode</tspan></text>
 </svg>
