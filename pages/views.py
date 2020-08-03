@@ -34,7 +34,7 @@ def contact_view(request):
 
         sent_messages = send_mail(
             'Message on Keeb&Code from ' + str(name),
-            str(message),
+            str(message) + " sent from " + str(email),
             str(email),
             ['nestaray@hotmail.com'],
         )
