@@ -4,6 +4,11 @@
 <meta name="description" content="{{ object.description }}">
 <meta name="keywords" content="{{ object.category }} blog post">
 <meta name="author" content="{{ object.author }}">
+<meta property='og:title' content='{{ object.title | title }}'/>
+<meta property='og:image' content='{{ object.banner.url }}'/>
+<meta property='og:description' content='{{ object.description }}'/>
+<meta property='og:url' content='{{ request.get_full_path }}'/>
+<meta property="og:type" content="article" />
 {% endblock %}
 
 {% block title %}Post {% endblock %}
