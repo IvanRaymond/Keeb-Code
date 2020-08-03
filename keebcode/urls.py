@@ -18,6 +18,8 @@ from django.conf.urls.static import static
 from django.conf import settings
 from django.urls import path, include
 from pages.views import (
+    handler400,
+    handler403,
     handler404,
     handler500
 )
@@ -31,5 +33,7 @@ urlpatterns = [
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
+handler400 = handler400
+handler403 = handler403
 handler404 = handler404
 handler500 = handler500
