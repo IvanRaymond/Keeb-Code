@@ -8,6 +8,6 @@ from .views import (
 app_name = 'pages'
 urlpatterns = [
     path("", feed_view, name='feed'),
-    path("about/", about_view, name='about'),
+    path("about/", about_view, name='about', status="400"),
     path("contact/", contact_view, name='contact')
 ]
