@@ -4,3 +4,7 @@
 # Ignore Virtual Environment file
 /blogenv
 
+# Ignore IDE Files
+.DS_STORE
+/.idea
+
