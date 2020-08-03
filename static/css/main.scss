@@ -183,6 +183,12 @@ video::-webkit-media-controls {
   outline: none;
 }
 
+h5.card-title {
+  @media #{$mq-xxlarge} {
+    font-size: 50px;
+  }
+}
+
 div.my-card {
   width: 90vw;
   height: 90vw;

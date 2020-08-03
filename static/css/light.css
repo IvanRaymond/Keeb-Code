@@ -10481,6 +10481,12 @@ video::-webkit-media-controls {
   outline: none;
 }
 
+@media (min-width: 160em) {
+  h5.card-title {
+    font-size: 50px;
+  }
+}
+
 div.my-card {
   width: 90vw;
   height: 90vw;

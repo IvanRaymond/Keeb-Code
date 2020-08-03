@@ -25,7 +25,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['164.90.238.204','keebcode.com','www.keebcode.com']
+ALLOWED_HOSTS = ['164.90.238.204', 'keebcode.com', 'www.keebcode.com', '127.0.0.1']
 
 # HTTPS Settings
 CSRF_COOKIE_SECURE = True
