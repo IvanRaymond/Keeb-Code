@@ -7,12 +7,15 @@ from pages.models import Profile
 
 def post_list_view(request):
     queryset = Post.objects.all()
+
+    # Declaration of the categories
     peripheral = False
     programming = False
     experiences = False
     hardware = False
     software = False
 
+    # Categories of posts
     for post in queryset:
         if post.visible:
             if post.category == 'peripheral':
