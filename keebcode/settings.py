@@ -33,7 +33,6 @@ SESSION_COOKIE_SECURE = True
 
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -42,7 +41,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    #own
     'pages',
     'posts',
 ]
@@ -81,7 +79,6 @@ WSGI_APPLICATION = 'keebcode.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-
 MONGO_PRIVATE_KEY = os.environ['MONGO_PRIVATE_KEY']
 
 DATABASES = {
@@ -99,7 +96,6 @@ DATABASES = {
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
-
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -118,7 +114,6 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
-
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
@@ -132,13 +127,11 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 
 # Media Root
-
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 MEDIA_URL = '/media/'
 
@@ -154,4 +147,3 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'ivanraymond99@gmail.com'
 EMAIL_HOST_PASSWORD = os.environ['EMAIL_PRIVATE_KEY']
 EMAIL_USE_TLS = True
-
