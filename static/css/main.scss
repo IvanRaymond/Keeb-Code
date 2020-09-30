@@ -88,31 +88,31 @@ body {
   -webkit-animation: mover 2s infinite  alternate;
   animation: mover 2s infinite  alternate;
   height: 240px;
-  width: 100%;
+  width: auto;
 
   @media #{$mq-xsmall} {
     height: 340px;
-    width: 100%;
+    width: auto;
   }
 
   @media #{$mq-small} {
     height: 440px;
-    width: 100%;
+    width: auto;
   }
 
   @media #{$mq-medium} {
     height: 540px;
-    width: 100%;
+    width: auto;
   }
 
   @media #{$mq-large} {
     height: 640px;
-    width: 100%;
+    width: auto;
   }
 
   @media #{$mq-xlarge} {
     height: 1080px;
-    width: 100%;
+    width: auto;
   }
 }
 

@@ -10376,36 +10376,36 @@ body {
   -webkit-animation: mover 2s infinite alternate;
   animation: mover 2s infinite alternate;
   height: 240px;
-  width: 100%;
+  width: auto;
 }
 @media (min-width: 22em) {
   .feed-render {
     height: 340px;
-    width: 100%;
+    width: auto;
   }
 }
 @media (min-width: 43em) {
   .feed-render {
     height: 440px;
-    width: 100%;
+    width: auto;
   }
 }
 @media (min-width: 64em) {
   .feed-render {
     height: 540px;
-    width: 100%;
+    width: auto;
   }
 }
 @media (min-width: 85.375em) {
   .feed-render {
     height: 640px;
-    width: 100%;
+    width: auto;
   }
 }
 @media (min-width: 120em) {
   .feed-render {
     height: 1080px;
-    width: 100%;
+    width: auto;
   }
 }
 
