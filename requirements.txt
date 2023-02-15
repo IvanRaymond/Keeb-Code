@@ -1,6 +1,6 @@
 asgiref==3.4.1
 dj-mongo-database-url==0.1.1
-Django==3.2.14
+Django==3.2.18
 djongo==1.3.6
 dnspython==2.1.0
 gunicorn==20.1.0
